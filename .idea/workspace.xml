@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edd78dcc-11de-4026-8d6a-1b9c146d07a8" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="edd78dcc-11de-4026-8d6a-1b9c146d07a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c46c3e64-1f20-40cb-a122-5daa72cee902.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c46c3e64-1f20-40cb-a122-5daa72cee902.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicianBlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +107,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\David\Projects\musicianBlog\.idea" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -202,10 +221,19 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1fQoJ5RQZeADjBKDLej1x0UQ69d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -214,43 +242,11 @@
       <recent name="C:\Users\David\Projects\musicianBlog\blog\public\css" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fb88103" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fb88103" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4cdce473" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -265,10 +261,41 @@
       <workItem from="1596159604038" duration="5402000" />
       <workItem from="1596204975772" duration="1162000" />
       <workItem from="1596216191267" duration="4269000" />
+      <workItem from="1596245978748" duration="8802000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1326" height="230" key="GridCell.Tab.0.bottom" timestamp="1596246104650">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state width="1326" height="230" key="GridCell.Tab.0.bottom/0.0.1368.882@0.0.1368.882" timestamp="1596246104650" />
+    <state width="1326" height="230" key="GridCell.Tab.0.center" timestamp="1596246104650">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state width="1326" height="230" key="GridCell.Tab.0.center/0.0.1368.882@0.0.1368.882" timestamp="1596246104650" />
+    <state width="1326" height="230" key="GridCell.Tab.0.left" timestamp="1596246104649">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state width="1326" height="230" key="GridCell.Tab.0.left/0.0.1368.882@0.0.1368.882" timestamp="1596246104649" />
+    <state width="1326" height="230" key="GridCell.Tab.0.right" timestamp="1596246104650">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state width="1326" height="230" key="GridCell.Tab.0.right/0.0.1368.882@0.0.1368.882" timestamp="1596246104650" />
+    <state x="519" y="373" key="NewPhpFileDialog" timestamp="1596287522426">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="519" y="373" key="NewPhpFileDialog/0.0.1368.882@0.0.1368.882" timestamp="1596287522426" />
+    <state x="507" y="155" key="RollbackChangesDialog" timestamp="1596286664518">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="507" y="155" key="RollbackChangesDialog/0.0.1368.882@0.0.1368.882" timestamp="1596286664518" />
+    <state x="362" y="201" width="672" height="678" key="search.everywhere.popup" timestamp="1596300906796">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="362" y="201" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1596300906796" />
   </component>
 </project>

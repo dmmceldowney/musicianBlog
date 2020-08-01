@@ -1,3 +1,6 @@
+@extends('layouts.baseLayout')
+
+@section('content')
 <div class="container section">
     <form class="form" action="#" method="post">
         <div class="field">
@@ -33,3 +36,4 @@
         <button class="button" type="submit">Submit</button>
     </form>
 </div>
+@endsection

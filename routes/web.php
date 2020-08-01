@@ -18,29 +18,31 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 // Pages I need:
+Route::get('/', 'BlogController@homeView')->name('blog.homeView');
 
 // Blog Posts
 Route::prefix('/blog')->group(function(){
     // index
-    Route::get('/', 'BlogController@index')->name('blog.index');
-    Route::get('/tags/', 'BlogController@tags')->name('blog.tags');
-    Route::get('/tags/{tagId}', 'BlogController@postsByTag')->name('blog.postsByTag');
-    Route::get('/{id}', 'BlogController@post')->name('blog.blogPost');
+    Route::get('', 'BlogController@indexView')->name('blog.indexView');
+    Route::get('/', 'BlogController@indexView')->name('blog.indexView');
+    Route::get('/tags/', 'BlogController@tagsView')->name('blog.tagsView');
+    Route::get('/tags/{tagId}', 'BlogController@postsByTagView')->name('blog.postsByTagView');
+    Route::get('/{id}', 'BlogController@postView')->name('blog.blogPostView');
 
 });
 
 // Post Management
 Route::prefix('/post-management')->middleware('auth')->group(function(){
-    Route::get('/', 'PostController@index')->name('posts.index')->middleware('auth');
-    Route::get('/edit-post/{id?}', 'PostController@editPost')->name('posts.create');
+    Route::get('/', 'PostController@indexView')->name('posts.indexView');
+    Route::get('/edit-post/{id?}', 'PostController@editPostView')->name('posts.createView');
     Route::post('/submit-post', 'PostController@submitPost')->name('posts.submit');
 
 });
 
 // Events
 Route::prefix('/events')->group(function(){
-    Route::get('/', 'EventsController@index')->name('events.index');
-    Route::get('/edit-event/{id?}', 'EventsController@editEvent')->name('events.createEvent')->middleware('auth');
+    Route::get('/', 'EventsController@indexView')->name('events.indexView');
+    Route::get('/edit-event/{id?}', 'EventsController@editEventView')->name('events.createEventView')->middleware('auth');
     Route::post('/submit-event', 'EventsController@submitEvent')->name('events.submitEvent')->middleware('auth');
 
 });

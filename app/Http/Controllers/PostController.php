@@ -28,7 +28,6 @@ class PostController extends Controller
     }
 
     public function submitPost(SubmitPostRequest $request){
-        dd('here');
         if (!empty($request->id)) {
             $post = BlogPost::find($request->id);
         } else {
@@ -36,8 +35,6 @@ class PostController extends Controller
         }
         $post->body = $request->body;
         $post->title = $request->title;
-
-        dd($post);
 
         $post->save();
 

@@ -1,8 +1,9 @@
 @extends('layouts.baseLayout')
 @section('pageTitle')
-    Blog
+David Bell Music
 @endsection
-@section('pageSubtitle')
+@section('pageSubTitle')
+Home
 @endsection
-@section('body')
+@section('content')
 @endsection
