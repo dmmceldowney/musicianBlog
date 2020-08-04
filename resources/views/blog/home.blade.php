@@ -1,4 +1,4 @@
-@extends('layouts.baseLayout')
+@extends('layouts.mainLayout')
 @section('pageTitle')
 David Bell Music
 @endsection

@@ -2,17 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edd78dcc-11de-4026-8d6a-1b9c146d07a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c46c3e64-1f20-40cb-a122-5daa72cee902.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c46c3e64-1f20-40cb-a122-5daa72cee902.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/eventDetail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/eventsIndex.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/postDetail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/postsIndex.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tagDetail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tagsIndex.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicianBlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/events/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/blogIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/baseLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/mainLayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,45 +67,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="blog_post_tags: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="blog_posts: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="events: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="failed_jobs: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="tags: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="musicianBlog" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -221,7 +198,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1fQoJ5RQZeADjBKDLej1x0UQ69d" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -236,6 +215,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -261,41 +241,56 @@
       <workItem from="1596159604038" duration="5402000" />
       <workItem from="1596204975772" duration="1162000" />
       <workItem from="1596216191267" duration="4269000" />
-      <workItem from="1596245978748" duration="8802000" />
+      <workItem from="1596245978748" duration="8925000" />
+      <workItem from="1596301771540" duration="10867000" />
+      <workItem from="1596547297554" duration="3901000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/musicianBlog" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1326" height="230" key="GridCell.Tab.0.bottom" timestamp="1596246104650">
+    <state x="365" y="180" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596547368621">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state width="1326" height="230" key="GridCell.Tab.0.bottom/0.0.1368.882@0.0.1368.882" timestamp="1596246104650" />
-    <state width="1326" height="230" key="GridCell.Tab.0.center" timestamp="1596246104650">
+    <state x="365" y="180" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1368.882@0.0.1368.882" timestamp="1596547368621" />
+    <state width="1326" height="230" key="GridCell.Tab.0.bottom" timestamp="1596301270014">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state width="1326" height="230" key="GridCell.Tab.0.center/0.0.1368.882@0.0.1368.882" timestamp="1596246104650" />
-    <state width="1326" height="230" key="GridCell.Tab.0.left" timestamp="1596246104649">
+    <state width="1326" height="230" key="GridCell.Tab.0.bottom/0.0.1368.882@0.0.1368.882" timestamp="1596301270014" />
+    <state width="1326" height="230" key="GridCell.Tab.0.center" timestamp="1596301270012">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state width="1326" height="230" key="GridCell.Tab.0.left/0.0.1368.882@0.0.1368.882" timestamp="1596246104649" />
-    <state width="1326" height="230" key="GridCell.Tab.0.right" timestamp="1596246104650">
+    <state width="1326" height="230" key="GridCell.Tab.0.center/0.0.1368.882@0.0.1368.882" timestamp="1596301270012" />
+    <state width="1326" height="230" key="GridCell.Tab.0.left" timestamp="1596301270012">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state width="1326" height="230" key="GridCell.Tab.0.right/0.0.1368.882@0.0.1368.882" timestamp="1596246104650" />
-    <state x="519" y="373" key="NewPhpFileDialog" timestamp="1596287522426">
+    <state width="1326" height="230" key="GridCell.Tab.0.left/0.0.1368.882@0.0.1368.882" timestamp="1596301270012" />
+    <state width="1326" height="230" key="GridCell.Tab.0.right" timestamp="1596301270013">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state x="519" y="373" key="NewPhpFileDialog/0.0.1368.882@0.0.1368.882" timestamp="1596287522426" />
+    <state width="1326" height="230" key="GridCell.Tab.0.right/0.0.1368.882@0.0.1368.882" timestamp="1596301270013" />
+    <state x="519" y="373" key="NewPhpFileDialog" timestamp="1596513884815">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="519" y="373" key="NewPhpFileDialog/0.0.1368.882@0.0.1368.882" timestamp="1596513884815" />
     <state x="507" y="155" key="RollbackChangesDialog" timestamp="1596286664518">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="507" y="155" key="RollbackChangesDialog/0.0.1368.882@0.0.1368.882" timestamp="1596286664518" />
-    <state x="362" y="201" width="672" height="678" key="search.everywhere.popup" timestamp="1596300906796">
+    <state x="188" y="87" key="SettingsEditor" timestamp="1596547346451">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state x="362" y="201" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1596300906796" />
+    <state x="188" y="87" key="SettingsEditor/0.0.1368.882@0.0.1368.882" timestamp="1596547346451" />
+    <state x="377" y="216" width="672" height="678" key="search.everywhere.popup" timestamp="1596551930437">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="377" y="216" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1596551930437" />
   </component>
 </project>

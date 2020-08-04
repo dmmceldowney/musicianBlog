@@ -10,10 +10,9 @@ class BlogController extends Controller
 {
     //
     public function homeView(){
-        // $blogPosts = BlogPost::orderBy('created_at', 'desc')->limit(10)->get();
+        $blogPosts = BlogPost::orderBy('created_at', 'desc')->limit(10)->get();
 
-        return view('blog.home');
-        // return view('blog.home', ['blogPosts' => $blogPosts]);
+        return view('blog.home', ['blogPosts' => $blogPosts]);
     }
 
     public function indexView(){
