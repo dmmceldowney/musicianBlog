@@ -1,0 +1,137 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+$seaweed: #517d82;
+$green-eagle: #084c61;
+$green-eagle-hover: rgba(65, 96, 101, 0.73);
+$cg-red: #db3a34;
+$max-yellow-red: #ffc857;
+$jet: #323031;
+
+.dark-nav {
+    background-color: $green-eagle;
+    color: white;
+}
+
+.navbar-item.dark-nav:hover {
+     background-color: $green-eagle-hover;
+     color: white;
+}
+
+.blog-post-title {
+    color: $green-eagle;
+    padding-bottom: 1em;
+    margin-bottom:0;
+    font-size: 1em;
+}
+
+p.creation-dates {
+    font-size: .8em;
+}
+
+.card-list-item {
+
+}
+
+ul.pagination {
+    list-style: none;
+}
+
+column.blog-post-spacing-bottom {
+    padding-bottom: 3em;
+    margin-bottom: 2em;
+}
+
+/* Lifted from https://www.sitepoint.com/create-calendar-icon-html5-css3/ */
+/* Date Icon for events pages & maybe blog posts eventually? */
+time.icon
+{
+    font-size: 1em; /* change icon size */
+    display: block;
+    position: relative;
+    width: 7em;
+    height: 7em;
+    background-color: #fff;
+    border-radius: 0.6em;
+    box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+    overflow: hidden;
+
+    * {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+    }
+
+    strong {
+        position: absolute;
+        top: 0;
+        padding: 0.4em 0;
+        color: #fff;
+        background-color: #fd9f1b;
+        border-bottom: 1px dashed #f37302;
+        box-shadow: 0 2px 0 #fd9f1b;
+    }
+
+    em {
+        position: absolute;
+        bottom: 0.3em;
+        color: #fd9f1b;
+    }
+
+    span {
+        font-size: 2.8em;
+        letter-spacing: -0.05em;
+        padding-top: 0.8em;
+        color: #2f2f2f;
+    }
+
+}
+/*
+time.icon *
+{
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+
+time.icon strong
+{
+    position: absolute;
+    top: 0;
+    padding: 0.4em 0;
+    color: #fff;
+    background-color: #fd9f1b;
+    border-bottom: 1px dashed #f37302;
+    box-shadow: 0 2px 0 #fd9f1b;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+
+time.icon span
+{
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+ */
+

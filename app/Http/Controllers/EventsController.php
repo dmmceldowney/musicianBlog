@@ -2,27 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Event;
 use App\Http\Requests\CreateEventRequest;
 use App\Http\Requests\SaveEventRequest;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
 {
     //
-    public function eventsIndexView(){
-        return "Events index";
-    }
+    public function eventsIndex(){
+        $events = Event::whereDate('start_time', '>=', Carbon::now()->toDate());
 
-    public function createEventView(){
-        return "Create new event";
-    }
-
-    public function saveEvent(SaveEventRequest $request) {
-        return null;
-    }
-
-    public function editEventView($id){
-        return "Edit event view $id";
+        return view('events.index', ['events' => $events]);
     }
 
 }

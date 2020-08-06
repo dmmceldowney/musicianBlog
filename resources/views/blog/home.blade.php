@@ -3,7 +3,7 @@
 David Bell Music
 @endsection
 @section('pageSubTitle')
-Home
+
 @endsection
 @section('content')
 @endsection

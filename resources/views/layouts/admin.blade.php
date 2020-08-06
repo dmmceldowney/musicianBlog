@@ -2,10 +2,10 @@
 
 @section('body')
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top dark-nav" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <strong>David Bell Music Admin</strong>
+            <a class="navbar-item dark-nav" href="{{ route('home') }}">
+                <strong>Site Administration</strong>
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -16,21 +16,21 @@
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbar" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item dark-nav" href="{{ route('admin.index') }}">
                     Home
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item dark-nav" href="{{ route('admin.blogIndex') }}">
                     Blog Posts
                 </a>
 
-                <a href="#" class="navbar-item">
+                <a  class="navbar-item dark-nav" href="{{ route('admin.tagsIndex') }}">
                     Tags
                 </a>
 
-                <a href="#" class="navbar-item">
+                <a class="navbar-item dark-nav" href="{{ route('admin.eventsIndex') }}">
                     Events
                 </a>
 
@@ -46,7 +46,7 @@
                 <div class="navbar-item">
                     <div class="buttons">
                         <a href="" class="button is-primary">
-                            {{ \Illuminate\Support\Facades\Auth::user()->name }}
+                            Settings
                         </a>
                         <a class="button is-danger" href="#">
                             Log Out
@@ -56,6 +56,7 @@
             </div>
         </div>
     </nav>
-    @yield('content')
-
+    <div class="">
+        @yield('content')
+    </div>
 @endsection

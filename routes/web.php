@@ -16,21 +16,21 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 // Admin Routes
-Route::domain('{admin}.localhost')->middleware('auth')->group(function(){
+Route::prefix('admin')->middleware('auth')->group(function(){
     // index
     Route::get('/', 'AdminManagementController@index')->name('admin.index');
 
     // blog index
     Route::prefix('/blog')->group(function(){
-        Route::get('/', 'AdminManagementController@postIndex')->name('admin.blogIndex');
-        Route::post('/create', 'AdminManagementController@createPost')->name('admin.saveBlogPost');
+        Route::get('', 'AdminManagementController@postIndex')->name('admin.blogIndex');
+        Route::get('/create', 'AdminManagementController@createPost')->name('admin.postDetail');
         Route::post('/saveBlogPost', 'AdminManagementController@savePost')->name('admin.saveBlogPost');
         Route::get('/edit/{id}', 'AdminManagementController@editPost')->name('admin.blogPostDetail');
     });
 
     // tags
     Route::prefix('/tags')->group(function(){
-        Route::get('/', 'AdminManagementController@tagsIndex')->name('admin.blogIndex');
+        Route::get('/', 'AdminManagementController@tagsIndex')->name('admin.tagsIndex');
         Route::get('/create', 'AdminManagementController@createTag')->name('admin.createTag');
         Route::post('saveTag', 'AdminManagementController@saveTag')->name('admin.saveTag');
         Route::get('/{id?}', 'AdminManagementController@editTag')->name('admin.editTag');
@@ -56,7 +56,7 @@ Route::get('/', 'BlogController@homeView')->name('blog.homeView');
 // Blog Posts
 Route::prefix('/blog')->group(function(){
     // index
-    Route::get('/', 'BlogController@indexView')->name('blog.indexView');
+    Route::get('', 'BlogController@indexView')->name('blog.indexView');
     Route::get('/tags/', 'BlogController@tagsView')->name('blog.tagsView');
     Route::get('/tags/{tagId}', 'BlogController@postsByTagView')->name('blog.postsByTagView');
     Route::get('/{id}', 'BlogController@postView')->name('blog.blogPostView');
@@ -66,7 +66,7 @@ Route::prefix('/blog')->group(function(){
 // Events
 Route::prefix('/events')->group(function(){
 
-    Route::get('/', 'EventsController@indexView')->name('events.indexView');
+    Route::get('', 'EventsController@eventsIndex')->name('events.indexView');
     Route::get('/{id}', 'EventsController@eventDetail')->name('events.detailView');
     Route::get('/next', 'EventsController@nextEventDetail')->name('events.nextShowView');
 
