@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class SaveEventRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class SaveEventRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return Auth::user()->admin = 1;
     }
 
     /**

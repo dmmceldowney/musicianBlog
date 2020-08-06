@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Carbon;
 
 class DatabaseSeeder extends Seeder
 {
@@ -80,6 +81,27 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => "11th Blog Post!",
                 'body' => "Integer pellentesque odio vulputate volutpat interdum. Integer non sagittis nisi, ac convallis lorem. Proin magna nunc, dapibus vitae hendrerit vel, fermentum non mauris. Cras tincidunt, leo vel maximus mollis, orci est aliquet lectus, in tempor ligula sem a eros. Suspendisse ut leo in odio rhoncus tristique. Mauris finibus nunc quis quam fringilla sodales. In eleifend ornare egestas. Nunc tortor dolor, rhoncus et libero eu, sollicitudin cursus lorem. Etiam magna nisi, accumsan eu lacinia vitae, feugiat aliquam lectus. Phasellus massa augue, suscipit ac mauris nec, bibendum elementum eros. Ut magna erat, pellentesque sed tincidunt mattis, aliquam sed nibh. Ut eleifend mattis libero. Donec ac vestibulum augue. Duis vehicula nunc sed pulvinar scelerisque. Morbi in pellentesque est. Donec feugiat vulputate purus, vel tristique eros faucibus at.<br>Phasellus tempus turpis felis, sed semper magna fringilla nec. Pellentesque volutpat, dui eu feugiat efficitur, risus lectus vulputate metus, in varius massa sapien vitae dui. Pellentesque ut lectus vel est faucibus dapibus et eget justo. Aliquam sodales ut risus ac finibus. Suspendisse sollicitudin convallis dui a ullamcorper. Vivamus viverra pellentesque nisl a lacinia. Aenean id sodales enim, a commodo libero.<br>Ut egestas ex in pretium interdum. Ut urna tortor, lobortis in nisi non, dignissim ullamcorper dolor. Mauris cursus placerat ultricies. Donec egestas diam a nulla finibus, ut sollicitudin ante euismod. Vestibulum commodo in enim non ultrices. Sed nulla nibh, pellentesque eu malesuada eget, consequat non dui. Fusce commodo diam eget massa lacinia blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus neque nibh, efficitur nec aliquet eget, viverra nec ipsum. Morbi rutrum finibus posuere. Proin pharetra augue at enim pellentesque efficitur.<br>Sed sagittis nisi in mollis porta. Proin massa erat, aliquam sit amet ipsum vel, dictum ornare lacus. Curabitur non odio porta, vehicula quam a, volutpat enim. Donec ut tempor enim. Phasellus feugiat ipsum vitae tempus pretium. In porta ex nulla, eu tempor ligula hendrerit id. Aliquam vel magna porttitor, condimentum nunc vitae, luctus nulla. Etiam non mauris urna. Pellentesque rhoncus sagittis magna, quis pharetra quam lacinia non.<br>Sed rhoncus nulla nec ligula feugiat, eu elementum odio tincidunt. Nam justo erat, pretium eu tempor vel, sagittis et velit. Donec sit amet nunc elit. Ut consequat, nulla ut suscipit pulvinar, sapien nisi pretium ex, at malesuada nunc dui ut metus. Mauris eu est elementum, gravida enim a, efficitur magna. Praesent id sem placerat, consectetur turpis sed, ultricies eros. Curabitur id porttitor nisl, ac suscipit erat. Sed finibus, diam vitae consequat cursus, dolor tellus luctus diam, et molestie sapien nunc vitae justo. Nam venenatis odio eu luctus sagittis. Cras condimentum mauris nec ex consequat ultrices. Sed eu neque et justo euismod fermentum. Aliquam dictum velit ut molestie iaculis.",
+            ],
+        ]);
+
+        DB::table('events')->insert([
+            [
+                'start_time' => Carbon::parse('2021-07-04'),
+                'venue' => 'Rusty\'s Saloon',
+                'description' => 'This is a hootenany of a bar! We\'re definitely gonna party hard!',
+                'playing_with' => 'Brave the Shallows, My Marionette, The Excellence of Execution, (MUSICIAN NAME)'
+            ],
+            [
+                'start_time' => Carbon::parse('2021-04-25'),
+                'venue' => 'The Elbow Room',
+                'description' => 'Popular Wichita venue',
+                'playing_with' => 'Slayer, Mastodon, (MUSICIAN NAME)'
+            ],
+            [
+                'start_time' => Carbon::parse('2021-07-04'),
+                'venue' => 'The Granada',
+                'description' => 'Historic theater in Lawrence, Kansas.',
+                'playing_with' => 'Brave the Shallows, My Marionette, The Excellence of Execution, (MUSICIAN NAME)'
             ],
         ]);
     }

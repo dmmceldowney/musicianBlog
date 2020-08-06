@@ -38,10 +38,10 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 
     // events
     Route::prefix('/events')->group(function(){
-        Route::get('/', 'AdminManagementController@eventsIndexView')->name('admin.eventsIndex');
-        Route::get('/create', 'AdminManagementController@createEventView')->name('admin.createEvent');
+        Route::get('/', 'AdminManagementController@eventsIndex')->name('admin.eventsIndex');
+        Route::get('/create', 'AdminManagementController@createEvent')->name('admin.createEvent');
         Route::post('/saveEvent', 'AdminManagementController@saveEvent')->name('admin.saveEvent');
-        Route::get('/edit/{id?}', 'AdminManagementController@editEventView')->name('admin.eventDetail');
+        Route::get('/edit/{id?}', 'AdminManagementController@editEvent')->name('admin.eventDetail');
     });
 
 });

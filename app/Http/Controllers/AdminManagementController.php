@@ -8,6 +8,7 @@ use App\Event;
 use App\Http\Requests\SaveEventRequest;
 use App\Http\Requests\SavePostRequest;
 use App\Http\Requests\SaveTagRequest;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class AdminManagementController extends Controller
@@ -92,7 +93,10 @@ class AdminManagementController extends Controller
 
     // EVENTS
     public function eventsIndex(){
-        return view('admin.eventsIndex');
+        $events = Event::whereDate('start_time', '>=', Carbon::now()->toDate())
+            ->orderBy('start_time', 'asc')->get();
+
+        return view('admin.eventsIndex', ['events' => $events]);
     }
 
     public function createEvent(){
