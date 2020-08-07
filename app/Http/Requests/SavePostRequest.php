@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
 
 class SavePostRequest extends FormRequest
 {
@@ -13,7 +15,7 @@ class SavePostRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return Auth::user()->admin = 1;
     }
 
     /**
@@ -23,8 +25,15 @@ class SavePostRequest extends FormRequest
      */
     public function rules()
     {
+
+        if (!empty($this->id)) {
+            return [
+                'title' => 'required|string|unique:blog_posts,title,'.$this->id.',id',
+                'id' => 'integer|exists:blog_posts,id'
+            ];
+        }
         return [
-            //
+            'title' => 'required|string|unique:blog_posts,title'
         ];
     }
 }

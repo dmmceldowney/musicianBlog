@@ -2,6 +2,7 @@
 
 @section('body')
 
+    @if(Illuminate\Support\Facades\Request::route()->getName() != 'login')
     <nav class="navbar is-fixed-top dark-nav" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item dark-nav" href="{{ route('home') }}">
@@ -15,7 +16,6 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-
         <div id="navbar" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item dark-nav" href="{{ route('admin.index') }}">
@@ -56,6 +56,7 @@
             </div>
         </div>
     </nav>
+    @endif
     <div class="">
         @yield('content')
     </div>

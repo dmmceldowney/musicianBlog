@@ -135,6 +135,32 @@ time.icon span
 
  */
 
-.class.section.admin-body {
+.section.admin-body {
     padding-top: 3em;
 }
+
+.fixed-dimension {
+    height: 400px;
+    width: 400px;
+    background-color: grey;
+}
+.content.is-vcentered {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; /* commenting this out, the multiple lines will have gaps */
+    align-items: center; /* commenting this out, the one-line will not align */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

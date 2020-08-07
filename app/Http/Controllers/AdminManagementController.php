@@ -40,13 +40,18 @@ class AdminManagementController extends Controller
 
     // save
     public function savePost(SavePostRequest $request){
-        $blogPost = new BlogPost;
-        $blogPost->title = $request->title;
-        $blogPost->body = $request->body;
-        // TODO: implement image uploads to S3 for blog post images
-        $blogPost->save();
+        if (!empty($request->id)) {
+            $post = BlogPost::find($request->id);
+        } else {
+            $post = new BlogPost;
+        }
 
-        return route('blog.blogPostView', ['id' => $blogPost->id]);
+        $post->title = $request->title;
+        $post->body = $request->body;
+        // TODO: implement image uploads to S3 for blog post images
+        $post->save();
+
+        return route('blog.blogPostView', ['id' => $post->id]);
 
     }
 

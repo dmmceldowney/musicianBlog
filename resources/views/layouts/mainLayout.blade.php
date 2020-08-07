@@ -5,7 +5,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ route('blog.homeView') }}">
-            <h4><strong>David Bell</strong></h4>
+            <h4><strong>David Lych-Bell</strong></h4>
         </a>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -15,7 +15,7 @@
         </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbar" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item" href="{{ route('blog.homeView') }}">
                 Home
@@ -42,9 +42,11 @@
             <a href="{{ route('events.indexView') }}" class="navbar-item">
                 Events
             </a>
+            <!--
             <a href="#" class="navbar-item" disabled>
                 <strike>Merch</strike>
             </a>
+            -->
         </div>
 
         <div class="navbar-end">

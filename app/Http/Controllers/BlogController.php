@@ -27,14 +27,14 @@ class BlogController extends Controller
         return view('blog.tags', ['tags' => $tags]);
     }
 
-    public function postsByTagView($tagId){
+    public function postsByTag($tagId){
         $posts = BlogPost::join('blog_post_tags', 'blog_post_tags.blog_post_id', '=', 'blog_posts.id')
                 ->where('tag_id', '=', $tagId)->get();
 
         return view('blog.postsByTag', ['posts' => $posts]);
     }
 
-    public function getPostView($id){
+    public function postView($id){
         $post = BlogPost::find($id);
 
         return view('blog.blogPost', ['post' => $post]);

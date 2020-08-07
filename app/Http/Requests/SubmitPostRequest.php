@@ -14,7 +14,7 @@ class SubmitPostRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return Auth::user()->admin = 1;
     }
 
     /**

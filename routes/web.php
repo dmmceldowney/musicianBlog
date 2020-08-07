@@ -58,7 +58,7 @@ Route::prefix('/blog')->group(function(){
     // index
     Route::get('', 'BlogController@indexView')->name('blog.indexView');
     Route::get('/tags/', 'BlogController@tagsView')->name('blog.tagsView');
-    Route::get('/tags/{tagId}', 'BlogController@postsByTagView')->name('blog.postsByTagView');
+    Route::get('/tags/{tagId}', 'BlogController@postsByTag')->name('blog.postsByTagView');
     Route::get('/{id}', 'BlogController@postView')->name('blog.blogPostView');
 
 });
