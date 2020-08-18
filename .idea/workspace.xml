@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edd78dcc-11de-4026-8d6a-1b9c146d07a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/blogPost.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c46c3e64-1f20-40cb-a122-5daa72cee902.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c46c3e64-1f20-40cb-a122-5daa72cee902.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/AttackOfBlood-eaZB.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminManagementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminManagementController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminManagementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreateEventRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateEventRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SavePostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/SavePostRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SubmitPostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/SubmitPostRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/postDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/postDetail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/tagDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tagDetail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/postsIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/postsIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/blogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/blogIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/home.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/mainLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/mainLayout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -68,7 +58,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="blog_posts: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -215,13 +205,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/fonts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Projects\musicianBlog\public\fonts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Projects\musicianBlog\public\fonts" />
       <recent name="C:\Users\David\Projects\musicianBlog\blog\public\css" />
     </key>
   </component>
@@ -247,12 +241,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d905c125" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -276,7 +265,11 @@
       <workItem from="1596547297554" duration="3973000" />
       <workItem from="1596558175318" duration="14279000" />
       <workItem from="1596636585735" duration="21623000" />
-      <workItem from="1596763233732" duration="5238000" />
+      <workItem from="1596763233732" duration="5448000" />
+      <workItem from="1597261757519" duration="14000" />
+      <workItem from="1597444537172" duration="2003000" />
+      <workItem from="1597673620731" duration="12000" />
+      <workItem from="1597677928129" duration="8110000" />
     </task>
     <task id="LOCAL-00001" summary="added a TON of content; i really should be committing as I finish features, but that's not happening. I'll start focusing on sections @ lunch">
       <created>1596552460614</created>
@@ -285,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596552460615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bunch of functionality; starting to work on the public-facing front end">
+      <created>1596768580459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596768580459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +296,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -307,7 +309,8 @@
       <path value="$PROJECT_DIR$/musicianBlog" />
     </ignored-roots>
     <MESSAGE value="added a TON of content; i really should be committing as I finish features, but that's not happening. I'll start focusing on sections @ lunch" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a TON of content; i really should be committing as I finish features, but that's not happening. I'll start focusing on sections @ lunch" />
+    <MESSAGE value="bunch of functionality; starting to work on the public-facing front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="bunch of functionality; starting to work on the public-facing front end" />
   </component>
   <component name="WindowStateProjectService">
     <state x="365" y="180" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596547368621">

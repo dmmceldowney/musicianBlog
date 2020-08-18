@@ -11051,3 +11051,65 @@ time.icon span
   padding-top: 3em;
 }
 
+
+@font-face {
+    font-family: HorrorFying;
+    default: sans-serif;
+    src: url('../fonts/AttackOfBlood-eaZB.ttf');
+}
+
+h1.title.is-1.huge-title {
+    font-size: 12em;
+    color: rgb(148, 0, 0);
+    font-family: HorrorFying;
+}
+
+
+a.nav-link-text {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:none;
+    font-family: HorrorFying;
+    color: grey;
+
+}
+
+a.nav-link-text:hover {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:none;
+    font-family: HorrorFying, sans-serif;
+    color: red;
+}
+
+a.nav-link-text:visited {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:grey;
+    font-family: HorrorFying, sans-serif;
+}
+
+a.nav-link-text:visited {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:grey;
+    font-family: HorrorFying, sans-serif;
+}
+
+div.hero.is-black {
+    background-color: black;
+    color: ghostwhite;
+}
+
+.horror-fying {
+    font-family: HorrorFying, Serif;
+}
+
+.horror-fying.large {
+    font-family: HorrorFying, Serif;
+    font-size: 8em;
+}
+
+.blog-post-link {
+    padding: 0em;
+}

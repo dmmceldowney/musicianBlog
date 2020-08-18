@@ -53,15 +53,12 @@
         </div>
     </div>
 </nav>
-<section class="hero is-medium is-primary is-bold">
+<section class="hero is-medium black is-bold">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title">
-                @yield('pageTitle')
+            <h1 class="title horror-fying">
+                @yield('title')
             </h1>
-            <h2 class="subtitle">
-                @yield('pageSubTitle')
-            </h2>
         </div>
     </div>
 </section>

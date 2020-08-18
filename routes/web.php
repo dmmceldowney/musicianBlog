@@ -18,30 +18,30 @@ Auth::routes();
 // Admin Routes
 Route::prefix('admin')->middleware('auth')->group(function(){
     // index
-    Route::get('/', 'AdminManagementController@index')->name('admin.index');
+    Route::get('/', 'AdminController@index')->name('admin.index');
 
     // blog index
     Route::prefix('/blog')->group(function(){
-        Route::get('', 'AdminManagementController@postIndex')->name('admin.blogIndex');
-        Route::get('/create', 'AdminManagementController@createPost')->name('admin.postDetail');
-        Route::post('/saveBlogPost', 'AdminManagementController@savePost')->name('admin.saveBlogPost');
-        Route::get('/edit/{id}', 'AdminManagementController@editPost')->name('admin.blogPostDetail');
+        Route::get('', 'AdminController@postIndex')->name('admin.blogIndex');
+        Route::get('/create', 'AdminController@createPost')->name('admin.createPost');
+        Route::post('/saveBlogPost', 'AdminController@savePost')->name('admin.saveBlogPost');
+        Route::get('/edit/{id}', 'AdminController@editPost')->name('admin.blogPost');
     });
 
     // tags
     Route::prefix('/tags')->group(function(){
-        Route::get('/', 'AdminManagementController@tagsIndex')->name('admin.tagsIndex');
-        Route::get('/create', 'AdminManagementController@createTag')->name('admin.createTag');
-        Route::post('saveTag', 'AdminManagementController@saveTag')->name('admin.saveTag');
-        Route::get('/{id?}', 'AdminManagementController@editTag')->name('admin.editTag');
+        Route::get('/', 'AdminController@tagsIndex')->name('admin.tagsIndex');
+        Route::get('/create', 'AdminController@createTag')->name('admin.createTag');
+        Route::post('saveTag', 'AdminController@saveTag')->name('admin.saveTag');
+        Route::get('/{id?}', 'AdminController@editTag')->name('admin.editTag');
     });
 
     // events
     Route::prefix('/events')->group(function(){
-        Route::get('/', 'AdminManagementController@eventsIndex')->name('admin.eventsIndex');
-        Route::get('/create', 'AdminManagementController@createEvent')->name('admin.createEvent');
-        Route::post('/saveEvent', 'AdminManagementController@saveEvent')->name('admin.saveEvent');
-        Route::get('/edit/{id?}', 'AdminManagementController@editEvent')->name('admin.eventDetail');
+        Route::get('/', 'AdminController@eventsIndex')->name('admin.eventsIndex');
+        Route::get('/create', 'AdminController@createEvent')->name('admin.createEvent');
+        Route::post('/saveEvent', 'AdminController@saveEvent')->name('admin.saveEvent');
+        Route::get('/edit/{id?}', 'AdminController@editEvent')->name('admin.eventDetail');
     });
 
 });

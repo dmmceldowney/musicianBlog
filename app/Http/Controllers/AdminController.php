@@ -11,7 +11,7 @@ use App\Http\Requests\SaveTagRequest;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class AdminManagementController extends Controller
+class AdminController extends Controller
 {
     public function index(){
         $blogPost = BlogPost::orderBy('created_at', 'desc')->first();
