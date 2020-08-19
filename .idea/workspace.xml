@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edd78dcc-11de-4026-8d6a-1b9c146d07a8" name="Default Changelist" comment="work on blog index page; added banner w/">
+    <list default="true" id="edd78dcc-11de-4026-8d6a-1b9c146d07a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/blogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/blogIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/blogPost.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/blogPost.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/mainLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/mainLayout.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +54,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="blog_posts: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="blog: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="events: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -238,11 +243,22 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@92377d6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@92377d6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1cba6967" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -270,7 +286,9 @@
       <workItem from="1597756298325" duration="642000" />
       <workItem from="1597758462709" duration="17000" />
       <workItem from="1597777557849" duration="648000" />
-      <workItem from="1597802730619" duration="8273000" />
+      <workItem from="1597802730619" duration="9406000" />
+      <workItem from="1597857358708" duration="12000" />
+      <workItem from="1597857747674" duration="6777000" />
     </task>
     <task id="LOCAL-00001" summary="added a TON of content; i really should be committing as I finish features, but that's not happening. I'll start focusing on sections @ lunch">
       <created>1596552460614</created>
@@ -293,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597712111672</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mostly front end work; updates to blog section of site; added cards for each blog post; added proper seeds to starter blog posts; added some styling options; added navbar styling &amp; burger functionality on landing page">
+      <created>1597811674604</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597811674604</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +343,8 @@
     </ignored-roots>
     <MESSAGE value="added a TON of content; i really should be committing as I finish features, but that's not happening. I'll start focusing on sections @ lunch" />
     <MESSAGE value="bunch of functionality; starting to work on the public-facing front end" />
-    <option name="LAST_COMMIT_MESSAGE" value="bunch of functionality; starting to work on the public-facing front end" />
+    <MESSAGE value="mostly front end work; updates to blog section of site; added cards for each blog post; added proper seeds to starter blog posts; added some styling options; added navbar styling &amp; burger functionality on landing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="mostly front end work; updates to blog section of site; added cards for each blog post; added proper seeds to starter blog posts; added some styling options; added navbar styling &amp; burger functionality on landing page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="365" y="180" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596547368621">

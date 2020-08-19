@@ -1,34 +1,43 @@
-@extends('layouts.mainLayout')
+@extends('layouts.base')
 
 @section('pageTitle')
-    Upcoming Events
+    Events and Shows
 @endsection
 
 @section('content')
     <div class="section container">
         @if(!empty($events))
-            @foreach($events as $event)
-                <div class="columns">
-                    <div class="column is-4"></div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="columns">
+           <div class="columns is-centered">
+               <div class="column is-10">
+                   <div class="card section container">
+                       <table class="table">
+                           <thead>
+                           <tr>
+                               <th>Where</th>
+                               <th>When</th>
+                               <th>Why</th>
+                               <th>Who</th>
+                               <th>Updated</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           @foreach($events as $event)
+                               <tr>
+                                   <td>{{ $event->venue }}</td>
+                                   <td>{{ $event->start_time }}</td>
+                                   <td>{{ $event->description }}</td>
+                                   <td>{{ $event->playing_with }}</td>
+                                   <td>{{ $event->updated_at }}</td>
+                               </tr>
+                           @endforeach
+                           </tbody>
+                       </table>
+                   </div>
+               </div>
+           </div>
+        @else
 
-                            </div>
 
-                            <time datetime="2014-09-20" class="icon">
-                                <em>{{ $event->dayOfWeek }}</em>
-                                <strong>{{ $event->monthYear }}</strong>
-                                <span>{{ $event->day }}</span>
-                            </time>
-
-                            <h4 class="subtitle is-4">at the {{ $event->title }}</h4>
-
-                        </div>
-                    </div>
-                    <div class="column"></div>
-                </div>
-            @endforeach
         @endif
     </div>
 @endsection

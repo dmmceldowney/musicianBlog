@@ -12,9 +12,11 @@ class EventsController extends Controller
 {
     //
     public function eventsIndex(){
-        $events = Event::whereDate('start_time', '>=', Carbon::now()->toDate());
+        $events = Event::whereDate('start_time', '>=', Carbon::now()->toDate())->get();
 
         return view('events.index', ['events' => $events]);
     }
+
+
 
 }

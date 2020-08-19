@@ -17,66 +17,78 @@
 
 </head>
 <body>
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
 
+<nav class="navbar level band-nav" role="navigation" aria-label="main navigation">
     <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-            <a class="navbar-item">
-                Home
-            </a>
-            <a class="navbar-item">
-                Events
-            </a>
-            <a class="navbar-item">
-                About
-            </a>
-            <a class="navbar-item">
-                Shop
-            </a>
-        </div>
+        <p class="level-item has-text-centered">
+            <div class="navbar-start">
+                <a class="navbar-item"  href="{{ route('blog.homeView') }}">
+                    Home
+                </a>
+                <a href="{{ route('blog.indexView') }}" class="navbar-item">
+                    Blog
+                </a>
+                <a class="navbar-item" href="{{ route('events.indexView') }}">
+                    Events
+                </a>
+                <a class="navbar-item">
+                    About
+                </a>
+                <a class="navbar-item">
+                    Shop
+                </a>
+            </div>
 
-        <div class="navbar-end">
-            <div class="navbar-item">
-                Facebook
+        <p class="level-item has-text-centered horror-fying-med">
+            <a href="{{ route('blog.homeView') }}" class="stripped-decoration-red">Black Satchel</a>
+        </p>
+
+        <p class="level-item">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    Facebook
+                </div>
+                <div class="navbar-item">
+                    Instagram
+                </div>
+                <div class="navbar-item">
+                    Twitter
+                </div>
+                <div class="navbar-item">
+                    Youtube
+                </div>
             </div>
-            <div class="navbar-item">
-                Instagram
-            </div>
-            <div class="navbar-item">
-                Twitter
-            </div>
-            <div class="navbar-item">
-                Youtube
-            </div>
-        </div>
     </div>
 </nav>
 
 <section class="hero is-black horror-fying">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title horror-fying-large">
-                @yield('pageTitle')
-            </h1>
-            <h2 class="subtitle is-2">
-                @yield('pageSubTitle')
-            </h2>
+            <div class="columns is-centered">
+                <div class="column has-text-centered has-text-justified">
+                    <h1 class="title horror-fying-large">
+                        @yield('pageTitle')
+                    </h1>
+                    <h2 class="subtitle is-2">
+                        @yield('pageSubTitle')
+                    </h2>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
+
+<!-------------------------------------------------------------------------------------------------- MAIN CONTENT SECTION -- I don't usually comment like this, I just want this area to stand out
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------>
     @yield('content')
+<!-- ------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+----- MAIN BODY SECTION -- just want this area to stand out ----------------------------------------->
+
+
 </body>
 
 <div class="footer">

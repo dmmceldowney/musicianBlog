@@ -152,10 +152,127 @@ time.icon span
 }
 
 
+@font-face {
+    font-family: HorrorFying;
+    default: sans-serif;
+    src: url('../fonts/AttackOfBlood-eaZB.ttf');
+}
+
+h1.title.is-1.huge-title {
+    font-size: 11em;
+    color: rgb(148, 0, 0);
+    font-family: HorrorFying;
+}
 
 
+a.nav-link-text {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:none;
+    font-family: HorrorFying;
+    color: grey;
+
+}
+
+a.nav-link-text:hover {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:none;
+    font-family: HorrorFying, sans-serif;
+    color: red;
+}
+
+a.nav-link-text:visited {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:grey;
+    font-family: HorrorFying, sans-serif;
+}
+
+a.nav-link-text:visited {
+    font-size: 3em;
+    background-color: transparent;
+    text-decoration:grey;
+    font-family: HorrorFying, sans-serif;
+}
+
+section.hero.is-black {
+    background-color: black;
+    color: ghostwhite;
+}
+
+.horror-fying {
+    font-family: HorrorFying, Serif;
+}
+/* fix these; turn them into sass stuff */
+.horror-fying-large {
+    font-family: HorrorFying, Serif;
+    color: red !important;
+    font-size: 8em;
+}
+
+.horror-fying-med {
+    font-family: HorrorFying, Serif;
+    font-size: 4em;
+    color: red !important;
+}
+
+.horror-fying-sm {
+    font-family: HorrorFying, Serif;
+    font-size: 2em;
+    color: red !important;
+}
+
+.blog-post-link {
+    padding: 0em;
+}
+
+a.card {
+    text-decoration: none;
+}
+
+a.card:hover {
+    color: black;
+}
+
+a.card:visited {
+    color: black;
+}
 
 
+.card.blog-card {
+    margin-top:24px;
+}
+
+.blog-paginator {
+    margin-top:30px;
+}
+
+.band-nav {
+    margin-bottom: 0 !important;
+}
+
+a.stripped-decoration-red:hover {
+    text-decoration: none;
+    color: red;
+}
+
+a.stripped-decoration-red:visited {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: gray;
+}
+
+.small-font {
+    font-size: 8pt;
+}
 
 
 
