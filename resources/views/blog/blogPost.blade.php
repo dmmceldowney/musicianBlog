@@ -1,11 +1,6 @@
 @extends('layouts.mainLayout')
 
 @section('content')
-
-
-
-
-
     <div class="content section">
         <div class="columns is-centered">
             <div class="column is-8 card">
@@ -18,9 +13,5 @@
                 <h4 class="subtitle is-4">Tags</h4>
             </div>
         </div>
-
     </div>
-
-
-
 @endsection

@@ -11059,7 +11059,7 @@ time.icon span
 }
 
 h1.title.is-1.huge-title {
-    font-size: 12em;
+    font-size: 11em;
     color: rgb(148, 0, 0);
     font-family: HorrorFying;
 }
@@ -11096,7 +11096,7 @@ a.nav-link-text:visited {
     font-family: HorrorFying, sans-serif;
 }
 
-div.hero.is-black {
+section.hero.is-black {
     background-color: black;
     color: ghostwhite;
 }
@@ -11105,11 +11105,37 @@ div.hero.is-black {
     font-family: HorrorFying, Serif;
 }
 
-.horror-fying.large {
+.horror-fying-large {
     font-family: HorrorFying, Serif;
     font-size: 8em;
 }
 
+.horror-fying-med {
+    font-family: HorrorFying, Serif;
+    font-size: 4em;
+}
+
 .blog-post-link {
     padding: 0em;
+}
+
+a.card {
+    text-decoration: none;
+}
+
+a.card:hover {
+    color: black;
+}
+
+a.card:visited {
+    color: black;
+}
+
+
+.card.blog-card {
+    margin-top:24px;
+}
+
+.blog-paginator {
+    margin-top:30px;
 }
