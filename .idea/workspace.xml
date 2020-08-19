@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="edd78dcc-11de-4026-8d6a-1b9c146d07a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/blogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/blogIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/blogPost.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/blogPost.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -243,17 +240,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@92377d6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@92377d6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1cba6967" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -288,7 +275,9 @@
       <workItem from="1597777557849" duration="648000" />
       <workItem from="1597802730619" duration="9406000" />
       <workItem from="1597857358708" duration="12000" />
-      <workItem from="1597857747674" duration="6777000" />
+      <workItem from="1597857747674" duration="7036000" />
+      <workItem from="1597870041393" duration="49000" />
+      <workItem from="1597880818950" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="added a TON of content; i really should be committing as I finish features, but that's not happening. I'll start focusing on sections @ lunch">
       <created>1596552460614</created>
@@ -318,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597811674604</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="a lot of work on the public side of this; i think once I finish building the skeleton of this I can probably sell the product to musicians and music groups for relatively cheap and just coast off of that and make updates as needed">
+      <created>1597869447111</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597869447111</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +340,8 @@
     <MESSAGE value="added a TON of content; i really should be committing as I finish features, but that's not happening. I'll start focusing on sections @ lunch" />
     <MESSAGE value="bunch of functionality; starting to work on the public-facing front end" />
     <MESSAGE value="mostly front end work; updates to blog section of site; added cards for each blog post; added proper seeds to starter blog posts; added some styling options; added navbar styling &amp; burger functionality on landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="mostly front end work; updates to blog section of site; added cards for each blog post; added proper seeds to starter blog posts; added some styling options; added navbar styling &amp; burger functionality on landing page" />
+    <MESSAGE value="a lot of work on the public side of this; i think once I finish building the skeleton of this I can probably sell the product to musicians and music groups for relatively cheap and just coast off of that and make updates as needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="a lot of work on the public side of this; i think once I finish building the skeleton of this I can probably sell the product to musicians and music groups for relatively cheap and just coast off of that and make updates as needed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="365" y="180" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596547368621">

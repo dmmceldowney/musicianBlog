@@ -14,7 +14,7 @@
         <div class="column is-6">
             @foreach($posts as $post)
                 <div class="container">
-                    <a class="card blog-card" href="#" >
+                    <a class="card blog-card" href="{{ route('blog.blogPostView', ['id' => $post->id]) }}" >
                         <div class="section content">
                             <h1 class="title horror-fying-large is-1">
                                 {{ $post->title }}
